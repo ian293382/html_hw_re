@@ -25,7 +25,7 @@ a{
 }
 
 .container{
-	max-width: 1380px;
+	max-width: 1680px;
 	width: 100%;
 
 	margin: 0 auto;
@@ -111,7 +111,67 @@ a{
 
 /* btn */
 
+.btn{
+	padding: 10px 32px;
+	margin: 0 6px;
+
+	color: #FFF;
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 35px;
+}
+
+.btn-group{
+	display: flex;
+}
+
+.btn.btn-primary{
+	background-color: #333;
+	border: 3px solid #007CED;
+	border-radius: 30px;
+	color: #fff;
+
+
+}
+
+.btn.btn-normal{
+	background-color: #333;
+	border: 3px solid #fff;
+	border-radius: 30px;
+	color: #fff;
+
+}
+
+
+
 /* image */
+.image-container{
+	width: 100%;
+}
+
+.image-container .image{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+
+	background-image: url('../images/main_image001.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position:  center;
+
+}
+
+.image-container::before{
+  /* 比例控制 */
+  content: '';
+  display: block;
+  width: 100%;
+  padding-top: 75%;
+}
 
 /* hero */
 
@@ -190,3 +250,58 @@ a{
 .navbar .nav .nav-link:hover{
   color: #fff;
 }
+
+
+/* main */
+
+.main{
+	padding-top: 180px;
+	padding-bottom: 200px;
+	width: 100%;
+	background-color: #222;
+}
+
+.main .main-preview{
+	margin-right: 250px;
+}
+
+.main .name_title{
+	margin-top: 5%;
+
+	color: rgba(255, 255, 255, 0.50);
+	font-family: Poppins;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 35px;
+
+	white-space: nowrap;
+}
+
+.main .title{
+	margin-top: 5%;
+
+	color: #FFF;
+	font-family: Poppins;
+	font-size: 70px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 35px;
+}
+
+.main .para{
+	display: block;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: left;
+	width: 100%;
+
+
+	color: #FFF;
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 35px;
+}
+
