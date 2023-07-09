@@ -305,3 +305,53 @@ a{
 	line-height: 35px;
 }
 
+
+/* footer */
+.footer{
+background-color: #222;
+
+}
+
+.footer .container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: space-around;
+
+
+}
+
+.footer .footer_group{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+
+
+}
+
+.footer .footer_group li{
+		display: inline-block;
+		margin: 0 20px;
+}
+
+.footer .nav-link{
+	color: rgba(255, 255, 255, 0.50);
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 35px;
+}
+
+.footer .copyright{
+	color: rgba(255, 255, 255, 0.80);
+	font-family: Poppins;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 35px;
+	margin: 0 60px;
+}
