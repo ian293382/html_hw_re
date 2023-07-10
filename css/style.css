@@ -975,6 +975,7 @@ option {
 	align-items: flex-start;
 	align-content: space-around;
 
+	/* resize footer padding 20px */
 	padding: -20px;
 
   border-top: 2px solid #444;
