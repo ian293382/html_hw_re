@@ -10,13 +10,8 @@ body {
 	font-family: '微軟正黑體', 'Poppins';
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+h1,h2,h3,
+h4,h5,h6,p{
 	margin: 0;
 }
 
@@ -51,21 +46,9 @@ a {
 	/* border: 1px solid #000; */
 }
 
-.col-lg-6,
-.col-lg-4,
-.col-lg-3,
-.col-lg-12,
-.col-lg-8,
-.col-md-6,
-.col-md-4,
-.col-md-3,
-.col-md-12,
-.col-md-8,
-.col-sm-6,
-.col-sm-4,
-.col-sm-3,
-.col-sm-12,
-.col-sm-8 {
+.col-lg-6,.col-lg-4,.col-lg-3,.col-lg-12,.col-lg-8,
+.col-md-6,.col-md-4,.col-md-3,.col-md-12,.col-md-8,
+.col-sm-6,.col-sm-4,.col-sm-3,.col-sm-12,.col-sm-8{
 	display: flex;
 	flex-direction: column;
 
@@ -93,7 +76,7 @@ a {
 	width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
 	.col-md-3 {
 		width: 25%;
 	}
@@ -223,6 +206,7 @@ a {
 /* image */
 .image-container {
 	width: 100%;
+	/* padding-top: 75%; */
 }
 
 .image-container .image {
@@ -352,14 +336,31 @@ a {
 /* main */
 
 .main {
-	padding-top: 180px;
-	padding-bottom: 200px;
+	padding-top: 50px;
+	padding-bottom: 100px;
 	width: 100%;
 	background-color: #222;
 }
 
+@media screen and (max-width:820px) {
+	.main {
+		padding-top: 0;
+    padding-bottom: 50px;
+	}
+}
+
+.main .row{
+	align-items: center;
+}
+
 .main .main-preview {
-	margin-right: 250px;
+	margin: 16px;
+}
+
+@media screen and (max-width:820px) {
+	.main .main-preview {
+		margin-right: 0px;
+	}
 }
 
 .main .name_title {
@@ -892,25 +893,6 @@ option {
 	resize: none;
 }
 
-/* footer */
-.footer {
-	background-color: #222;
-	padding: 30px;
-
-
-}
-
-.footer .container {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-start;
-	align-content: space-around;
-
-	padding: -30px;
-
-  border-top: 2px solid #444;
-}
 
 .contact_btn{
 	display: block;
@@ -932,7 +914,26 @@ option {
 	line-height: 35px;
 }
 
+
 /* footer */
+.footer {
+	background-color: #222;
+	padding: 20px;
+
+}
+
+.footer .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: space-around;
+
+	padding: -30px;
+
+  border-top: 2px solid #444;
+}
+
 .footer .footer_group {
 	display: flex;
 	flex-direction: row;
