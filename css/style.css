@@ -698,7 +698,199 @@ background: #222;
 	/* border: 1px solid #222; */
 }
 
+/* contact */
+.contact{
+	background: #222;
+}
 
+.map-container{
+	margin: 26px auto;
+	width: 100%;
+	padding-top: 10%;
+
+}
+
+.map-container iframe{
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+}
+.contact-wrapper{
+	display: inline-flex;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	margin-bottom: 20px;
+	flex-direction: row;
+
+	width: 100%;
+}
+
+.contact-item{
+	display: inline-flex;
+	margin-bottom: 20px;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	align-items: center;
+
+}
+
+.contact-image{
+	display: flex;
+
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+
+	width:25%;
+	padding-right: 10px;
+}
+
+.contact-image img {
+	padding-right: 10px;
+
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.contact-text-group {
+	display: inline-flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 75%;
+
+}
+
+.contact_name {
+	color: #FFF;
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 35px;
+}
+
+.contact_para{
+	color: rgba(255, 255, 255, 0.70);
+	font-family: Poppins;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 27px;
+
+}
+
+.contact .headline_box_group {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+
+	padding-bottom: 20px;
+}
+
+.contact .headline_service {
+	color: #FFF;
+	font-family: Poppins;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 35px;
+
+}
+
+.contact .headline-box-border-grey {
+	width: 87px;
+	height: 2px;
+
+	background: #353535;
+	display: inline-flex;
+	/* 與下方重合 */
+	top: 0px;
+}
+
+.contact .headline-box-border-blue {
+	width: 40px;
+	height: 2px;
+	background: #007CED;
+
+	display: inline-flex;
+	top: 2px;
+	z-index: 2;
+}
+
+.contact_form{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* contact_form */
+
+.form_item input{
+  margin: 12px auto;
+  width: 100%;
+  height: 53px;
+  /* padding: 8px; */
+	background: #222;
+
+	border-radius: 5px;
+	border: 2px solid #555;
+}
+
+
+.contact_loation select {
+  background: #222;
+  color: #555;
+	margin: 6px auto;
+  width: 100%;
+  height: 53px;
+  /* padding: 8px; */
+
+  border-radius: 5px;
+	border: 2px solid #555;
+
+/* 	appearance 屬性的使用時機有兩種：
+
+替元素套用瀏覽器專屬的預設樣式，或是
+替元素移除掉瀏覽器專屬的預設樣式 */
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+	/* icon */
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M7%2010l5%205%205-5z%22%2F%3E%3C%2Fsvg%3E"), linear-gradient(#222, #222);
+	/* 打開樣式 */
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M7%2010l5%205%205-5z%22%2F%3E%3C%2Fsvg%3E"), -webkit-linear-gradient(#222, #222);
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M7%2010l5%205%205-5z%22%2F%3E%3C%2Fsvg%3E"), -moz-linear-gradient(#222, #222);
+  background-position: right 0.5em top 50%, 0 0;
+  background-size: contain, cover;
+  background-repeat: no-repeat, repeat;
+}
+
+option {
+  appearance: none;
+  background: #fff;
+  position: absolute;
+}
+
+.form_text {
+	margin: 12px auto;
+  width: 100%;
+	background: #222;
+
+	border-radius: 5px;
+	border: 2px solid #555;
+	height: 300%;
+
+	resize: none;
+}
 
 /* footer */
 .footer {
@@ -720,6 +912,27 @@ background: #222;
   border-top: 2px solid #444;
 }
 
+.contact_btn{
+	display: block;
+	margin-top:27px;
+	width: 160px;
+	height: 62px;
+	border-radius: 30px;
+	border: 3px solid #007CED;
+	background: #333;
+}
+
+.contact_btn input{
+
+	color: #FFF;
+	font-family: Poppins;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 35px;
+}
+
+/* footer */
 .footer .footer_group {
 	display: flex;
 	flex-direction: row;
