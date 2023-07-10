@@ -140,7 +140,6 @@ a {
 	justify-content:flex-start;
 }
 
-
 @media screen and (max-width:820px) {
 	.btn-group{
 		justify-content: center;
@@ -976,7 +975,7 @@ option {
 	align-items: flex-start;
 	align-content: space-around;
 
-	padding: -30px;
+	padding: -20px;
 
   border-top: 2px solid #444;
 }
