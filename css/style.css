@@ -272,6 +272,8 @@ a {
 	.hero{
 		padding-top: 50px;
 		padding-bottom: 50px;
+
+		text-align: center;
 	}
 }
 
@@ -287,6 +289,15 @@ a {
 	font-style: normal;
 	font-weight: 700;
 	line-height: 35px;
+}
+
+@media screen and (max-width:820px) {
+	.page_title {
+		font-size: 45px;
+		font-weight: 700;
+		line-height: 35px;
+	}
+
 }
 
 /* navbar */
@@ -585,7 +596,7 @@ a {
 @media screen and (max-width:820px) {
 	.front_end_skill .headline_box_group {
     align-items: center;
-		padding-bottom: 20px;
+		padding-bottom: 10px;
 	}
 }
 
@@ -597,6 +608,7 @@ a {
 	font-weight: 700;
 	line-height: 35px;
 
+	margin-bottom: 5px;
 }
 
 .front_end_skill .headline-box-border-grey {
