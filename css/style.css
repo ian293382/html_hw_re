@@ -949,8 +949,6 @@ background: #222;
 	}
 }
 
-
-
 .portfolio .galerie_group{
 	display: flex;
 	flex-direction: row;
@@ -1020,6 +1018,13 @@ background: #222;
 
 }
 
+
+@media screen and (max-width:820px) {
+	.map-container{
+	height: 200px;
+	}
+}
+
 .map-container iframe{
 
   position: absolute;
@@ -1031,7 +1036,7 @@ background: #222;
 }
 .contact-wrapper{
 	display: inline-flex;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	align-items: flex-start;
 	margin-bottom: 20px;
 	flex-direction: row;
@@ -1068,6 +1073,7 @@ background: #222;
 	background-position: center;
 }
 
+
 .contact-text-group {
 	display: inline-flex;
 	flex-wrap: nowrap;
@@ -1103,6 +1109,14 @@ background: #222;
 	flex-wrap: nowrap;
 
 	padding-bottom: 20px;
+}
+
+@media screen and (max-width: 820px) {
+	.contact .headline_box_group {
+		padding-top: 10px;
+		align-items: center;
+		padding-bottom: 10px;
+	}
 }
 
 .contact .headline_service {
@@ -1202,7 +1216,6 @@ option {
 	resize: none;
 }
 
-
 .contact_btn{
 	display: block;
 	margin-top:27px;
@@ -1211,6 +1224,12 @@ option {
 	border-radius: 30px;
 	border: 3px solid #007CED;
 	background: #333;
+}
+
+@media screen and (max-width:540px) {
+	.contact_btn{
+	margin: 0 auto;
+	}
 }
 
 .contact_btn input{
